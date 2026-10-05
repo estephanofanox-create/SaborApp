@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">SaborApp</string>
+
+    <!-- Login -->
+    <string name="login_titulo">SaborApp</string>
+    <string name="login_subtitulo">Pollería El Buen Sabor</string>
+    <string name="login_usuario">Usuario</string>
+    <string name="login_clave">Contraseña</string>
+    <string name="login_ingresar">Ingresar</string>
+    <string name="login_hint_admin">admin / 1234</string>
+    <string name="login_error_vacio">Campo obligatorio</string>
+    <string name="login_error_credenciales">Credenciales incorrectas</string>
+
+    <!-- Menú -->
+    <string name="menu_hola">Hola, %1$s</string>
+    <string name="menu_rol_admin">Rol: Administrador</string>
+    <string name="menu_rol_mozo">Rol: Mozo</string>
+    <string name="menu_platos">Platos</string>
+    <string name="menu_mesas">Mesas</string>
+    <string name="menu_pedidos">Pedidos</string>
+    <string name="menu_reportes">Reportes</string>
+    <string name="menu_salir">Salir</string>
+</resources>

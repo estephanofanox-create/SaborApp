@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.SaborApp" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/naranja_principal</item>
+        <item name="colorPrimaryVariant">@color/rojo_secundario</item>
+        <item name="colorOnPrimary">@color/blanco</item>
+        <item name="colorSecondary">@color/naranja_claro</item>
+        <item name="colorOnSecondary">@color/negro</item>
+        <item name="android:statusBarColor">@color/rojo_secundario</item>
+    </style>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gris_fondo"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/txtTituloCuenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mesa 1"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/naranja_principal"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtEstadoMesa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pedido abierto"
+        android:textSize="13sp"
+        android:textColor="@color/gris_texto"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@id/txtTituloCuenta"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDetalle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/txtEstadoMesa"
+        app:layout_constraintBottom_toTopOf="@id/txtTotalCuenta"/>
+
+    <TextView
+        android:id="@+id/txtTotalCuenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total: S/ 0.00"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/naranja_principal"
+        android:gravity="end"
+        android:paddingVertical="12dp"
+        app:layout_constraintBottom_toTopOf="@id/btnCerrarCuenta"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCerrarCuenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cerrar cuenta"
+        android:backgroundTint="@color/naranja_principal"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCompartirCuenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Compartir por WhatsApp"
+        android:backgroundTint="@color/rojo_secundario"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@id/btnCerrarCuenta"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
